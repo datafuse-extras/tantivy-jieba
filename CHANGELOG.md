@@ -1,3 +1,20 @@
+v0.20.0 2026-05-23
+==========================
+
+1. Bump jieba-rs to 0.10.0 (thanks @yihong0618)
+
+v0.19.0 2026-04-01
+==========================
+
+1. Bump tantivy-tokenizer-api to 0.7.0
+
+v0.18.0 2025-12-31
+==========================
+
+1. Merge CustomJiebaTokenizer into JiebaTokenizer to simplify API (thanks @wangrunji0408)
+2. Add search mode option to JiebaTokenizer (thanks @wangrunji0408)
+3. Add ordinal position mode for Token.position (fixes #24)
+
 v0.17.0 2025-08-26
 ==========================
 

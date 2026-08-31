@@ -43,7 +43,9 @@ fn main() {
     let searcher = reader.searcher();
     let query_parser = QueryParser::for_index(&index, vec![name]);
     let query = query_parser.parse_query("售货员").unwrap();
-    let top_docs = searcher.search(&query, &TopDocs::with_limit(10)).unwrap();
+    let top_docs = searcher
+        .search(&query, &TopDocs::with_limit(10).order_by_score())
+        .unwrap();
     println!("Search Result:");
     for (_, doc_address) in top_docs {
         let retrieved_doc: TantivyDocument = searcher.doc(doc_address).unwrap();

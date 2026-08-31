@@ -1,6 +1,6 @@
 [package]
 name = "tantivy-jieba"
-version = "0.17.0"
+version = "0.20.0"
 authors = ["Jiajie Chen <c@jia.je>"]
 edition = "2021"
 description = "A library that bridges between tantivy and jieba-rs"
@@ -10,12 +10,12 @@ keywords = ["tantivy", "jieba"]
 license = "MIT"
 
 [dependencies]
-jieba-rs = "0.8.0"
+jieba-rs = "0.10.0"
 lazy_static = "1.4.0"
-tantivy-tokenizer-api = { git = "https://github.com/datafuse-extras/tantivy", rev = "b600b0e", package="tantivy-tokenizer-api" }
+tantivy-tokenizer-api = { git = "https://github.com/datafuse-extras/tantivy", rev = "760ddb7", package="tantivy-tokenizer-api" }
 
 [dev-dependencies]
-tantivy = "0.25.0"
+tantivy = "0.27.0"
 criterion = "0.8.0"
 
 [[bench]]
